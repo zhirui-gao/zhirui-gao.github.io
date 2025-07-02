@@ -48,7 +48,7 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://alexeybokhovkin.github.io/scenefactor/">
+          <a class="navbar-item" href="https://zhirui-gao.github.io/CurveGaussian/">
             Curve-Aware Gaussian Splatting for 3D Parametric Curve Reconstruction
           </a>
         </div>
@@ -73,10 +73,10 @@
               <a href="https://renjiaoyi.github.io/">Renjiao Yi</a>
             </span>
             <span class="author-block">
-              <a href="http://shubhtuls.github.io">Yaqiao Dai</a>
+              <a >Yaqiao Dai</a>
             </span>
             <span class="author-block">
-              <a href="http://shubhtuls.github.io">Xuening Zhu</a>
+              <a >Xuening Zhu</a>
             </span>
             <span class="author-block">
               <a href="https://openreview.net/profile?id=~Wei_Chen35">Wei Chen</a>
@@ -90,7 +90,7 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>National University of Defense Technology</span>
+            <span class="author-block">National University of Defense Technology</span>
           </div>
          
           <div class="is-size-5 publication-authors">
@@ -120,7 +120,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=wZqX09IFveA"
+                <a href="https://github.com/zhirui-gao/Curve-Gaussian"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -130,7 +130,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/alexeybokhovkin/SceneFactor"
+                <a href="https://github.com/zhirui-gao/Curve-Gaussian"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -150,11 +150,11 @@
 <section class="hero teaser">
   <div class="columns is-centered has-text-centered">
     <div class="column is-6">
-      <h3 class="title is-">CurveGaussian enables compact 3D parametric curve <br> reconstruction  from multi-view 2D edge maps.</h3>
-      <img id="teaser" src="static/videos/room0.gif" alt="3D curve reconstruction demonstration" class="teaser-gif">
-      <h2 class="subtitle has-text-centered">
-      CurveGaussian is a novel bi-directional coupling framework between parametric curves and edge-oriented Gaussian components, enabling direct optimization of parametric curves through differentiable Gaussian splatting.
-      </h2>
+      <h3 class="title is-4">CurveGaussian enables compact 3D parametric curve  reconstruction  from multi-view 2D edge maps!</h3>
+      <img id="teaser" src="static/videos/room0.gif" style="max-width: 80%; height: auto; alt="3D curve reconstruction demonstration" class="teaser-gif">
+      <h2 class="subtitle is-5 has-text-centered" style="max-width: 80%; margin: 1.5rem auto 0; line-height: 1.6;">
+          CurveGaussian is a novel bi-directional coupling framework between parametric curves and edge-oriented Gaussian components, enabling direct optimization of parametric curves through differentiable Gaussian splatting.
+        </h2>
     </div>
   </div>
 </section>
@@ -183,7 +183,7 @@
           </p>
             
           <p>
-            However, parametric curves inherently lack suitability for rendering-based multi-view optimization, necessitating a complementary representation that preserves their geometric properties while enabling differentiable rendering. We propose a novel bi-directional coupling mechanism between parametric curves and edge-oriented Gaussian components. This tight correspondence formulates a curve-aware Gaussian representation, \textbf{CurveGaussian}, that enables differentiable rendering of 3D curves, allowing direct optimization guided by multi-view evidence. Furthermore, we introduce a dynamically adaptive topology optimization framework during training to refine curve structures through linearization, merging, splitting, and pruning operations.
+            However, parametric curves inherently lack suitability for rendering-based multi-view optimization, necessitating a complementary representation that preserves their geometric properties while enabling differentiable rendering. We propose a novel bi-directional coupling mechanism between parametric curves and edge-oriented Gaussian components. This tight correspondence formulates a curve-aware Gaussian representation, CurveGaussian, that enables differentiable rendering of 3D curves, allowing direct optimization guided by multi-view evidence. Furthermore, we introduce a dynamically adaptive topology optimization framework during training to refine curve structures through linearization, merging, splitting, and pruning operations.
           </p>
             
           <p>
@@ -198,77 +198,163 @@
 
 
 
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-two-thirds">
-        <h3 class="title is-4">Large-scale Scene Generation from Text Input</h3>
-        <div class="content has-text-justified">
-          <p>
-            Qualitative comparisons to state-of-the-art diffusion-based 3D scene generative approaches <a href="https://yang-l1.github.io/blockfusion/">BlockFusion</a>, 
-            and <a href="https://yccyenchicheng.github.io/SDFusion/">SDFusion</a>. Our approach produces improved scene geometry and more cohesive global scene structure 
-            with consistent walls compared to baselines.
-          </p>
-          <p>
-            *Note that results for BlockFusion are generated unconditionally
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <div class="content">
-              <img src="static/images/scenes_quality.jpg"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 <section>
-  <!-- Paper video. -->
+  <!-- Paper image. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-6">
-      <h2 class="title is-2">Video</h2>
-      <div class="publication-video">
-        <iframe src="https://www.youtube.com/embed/wZqX09IFveA?rel=0&amp;showinfo=0"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <h2 class="title is-2">Pipeline</h2>
+      <div class="publication-image">
+        <img src="static/images/pipeline.png" alt="Scenethesis Demo" style="max-width: 80%; height: auto;">
+          <h2 class="subtitle is-5 has-text-centered" style="max-width: 80%; margin: 1.5rem auto 0; line-height: 1.6;">
+        We propose a curve-aware Gaussian representation that optimizes parametric curves through a
+one-stage optimization in a self-supervised manner by re-rendering losses. The method employs many adaptive strategies, including curve
+linearization, merging, splitting, and pruning, to dynamically adjust the curves during training.</p>
       </div>
     </div>
   </div>
-  <!--/ Paper video. -->
+  <!--/ Paper image. -->
 </section>
+
 
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-two-thirds">
-        <h3 class="title is-4">Diffusion-based Factored 3D Scene Generation</h3>
+        <h3 class="title is-3">Experimnets on Replica dataset</h3>
         <div class="content has-text-justified">
           <p>
-            We formulate text-guided 3D scene generation as a factored diffusion process, first generating a coarse
-            semantic box layout representing the text input (left), followed by synthesis of scene geometry corresponding to the generated semantics
-            (right). This factorization makes complex 3D scene generation more tractable and enables generation of locally editable 3D scenes, which
-            can be manipulated through box manipulations in the semantic maps.
+             Qualitative comparisons to state-of-the-art 3D parametric curve reoncstruction approaches: <a href="https://github.com/cvg/limap">LIMAP</a>, 
+            
+            <a href="https://github.com/yunfan1202/NEF_code">NEF</a>,  <a href="https://github.com/kunalchelani/EdgeGaussians">EdgeGS</a>,  
+            and <a href="https://github.com/cvg/EMAP">EMAP</a>. Distinct colors represent different curves/lines. Our method achieves more
+complete and accurate edge reconstruction of objects while maintaining parametric compactness.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- GIF 1 (First Row) -->
+    <div class="columns is-centered" style="margin-top: 1rem;">
+      <div class="column is-two-thirds">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="static/videos/00000952_comparison.gif" alt="Feature Reconstruction">
+            </figure>
+          </div>
+     
+        </div>
+      </div>
+    </div>
+    
+    <!-- GIF 2 (Second Row) -->
+    <div class="columns is-centered" style="margin-top: 1rem;">
+      <div class="column is-two-thirds">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="static/videos/00007025_comparison.gif" alt="Edge Detection">
+            </figure>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+    <!-- GIF 3 (Third Row) -->
+    <div class="columns is-centered" style="margin-top: 1rem;">
+      <div class="column is-two-thirds">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="static/videos/00008100_comparison.gif" alt="3D Curve Mapping">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+        <h3 class="title is-3">Experimnets on ABC-NEF dataset</h3>
+        <div class="content has-text-justified">
+          <p>
+           
+Our approach seamlessly scales to scene-level applications.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- GIF 1 (First Row) -->
+    <div class="columns is-centered" style="margin-top: 1rem;">
+      <div class="column is-two-thirds">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="static/videos/room0.gif" alt="Feature Reconstruction">
+            </figure>
+          </div>
+     
+        </div>
+      </div>
+    </div>
+    
+    <!-- GIF 2 (Second Row) -->
+    <div class="columns is-centered" style="margin-top: 1rem;">
+      <div class="column is-two-thirds">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="static/videos/room1.gif" alt="Edge Detection">
+            </figure>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+    <!-- GIF 3 (Third Row) -->
+    <div class="columns is-centered" style="margin-top: 1rem;">
+      <div class="column is-two-thirds">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="static/videos/room2.gif" alt="3D Curve Mapping">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+        <h3 class="title is-3">Additional Scene Editing Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            Our method achieves clean and accurate parametric
+curve reconstruction through a one-stage optimization utilizing the
+proposed curve-aware Gaussian
           </p>
         </div>
       </div>
     </div>
     <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
+      <div class="column is-two-thirds"> <!-- Changed from is-full-width to is-two-thirds -->
         <div class="columns is-centered">
-          <div class="column is-full-width">
+          <div class="column">
             <div class="content">
-              <video id="teaser" autoplay muted loop height="100%">
-                <source src="static/videos/method.mp4"
-                        type="video/mp4">
-              </video>
+              <img src="static/images/teaser.png" style="max-width: 80%; height: auto; margin: 0 auto; display: block;"/>
             </div>
           </div>
         </div>
@@ -280,152 +366,6 @@
 
 
 
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h3 class="title is-2">Possible Editing Scenarios</h3>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-addition has-text-centered">
-          <h5 class="title is-5"></h5>
-          <h5 class="title is-4">Addition</h5>
-          <video poster="" id="addition" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/addition.mp4"
-                    type="video/mp4">
-          </video>
-          <h5 class="title is-5"> </h5>
-        </div>
-        <div class="item item-size has-text-centered">
-          <h5 class="title is-5"></h5>
-          <h5 class="title is-4">Size change</h5>
-          <video poster="" id="size" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/size.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-replacement has-text-centered">
-          <h5 class="title is-5"></h5>
-          <h5 class="title is-4">Replacement</h5>
-          <video poster="" id="replacement" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/replacement.mp4"
-                    type="video/mp4">
-          </video>
-          <h5 class="title is-5"> </h5>
-        </div>
-        <div class="item item-move has-text-centered">
-          <h5 class="title is-5"></h5>
-          <h5 class="title is-4">Displacement</h5>
-          <video poster="" id="move" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/move.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-removal has-text-centered">
-          <h5 class="title is-5"></h5>
-          <h5 class="title is-4">Removal</h5>
-          <video poster="" id="removal" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/removal.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-two-thirds">
-        <h3 class="title is-4">Additional Scene Editing Results</h3>
-        <div class="content has-text-justified">
-          <p>
-            Generated scenes and their corresponding semantic maps are shown in the first and third row,
-            and alternatives for each object synthesis-based edit are shown in the second and fourth row.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <div class="content">
-              <img src="static/images/editing_additional.jpg"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-two-thirds">
-        <h3 class="title is-4">Scene Chunk Generation from Text Input</h3>
-        <div class="content has-text-justified">
-          <p>
-            Qualitative comparison with state of the art on text-guided scene chunk generation using Qwen1.5 captions. In comparison with
-            <a href="https://alexzhou907.github.io/pvd">PVD</a>, <a href="https://jryanshue.com/nfd/">NFD</a>, 
-            <a href="https://yccyenchicheng.github.io/SDFusion/">SDFusion</a>, and <a href="https://yang-l1.github.io/blockfusion/">BlockFusion</a> 
-            SceneFactor generates higher-fidelity, more coherent scene structures through our factored approach.
-            </p>
-            <p>
-            *Note that results for BlockFusion are generated unconditionally
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <div class="content">
-              <img src="static/images/chunks_quality.jpg"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-two-thirds">
-        <h3 class="title is-4">Perceptual Study</h3>
-        <div class="content has-text-justified">
-          <p>
-            Perceptual study of the quality of text-guided 3D indoor scene generation and editing. (a) Unary study on perceptual geometric
-            quality and text consistency for generated chunks and scenes. (b) Unary study on editing quality and scene consistency for SceneFactor.
-            (c) Binary study between SceneFactor and baselines on text consistency between captions and generated chunks. (d) Binary study between
-            SceneFactor and baselines on perceptual geometric quality of generated chunks. (e) Unary study of SceneFactor for locality of edits.
-            </p>
-            <p>
-            *Note that results for BlockFusion are generated unconditionally
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <div class="columns is-centered">
-          <div class="column is-full-width">
-            <div class="content">
-              <img src="static/images/user_study.jpg"/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <section class="section" id="BibTeX">
@@ -449,10 +389,10 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link" href="static/pdf/scenefactor.pdf">
+      <a class="icon-link" href="https://arxiv.org/abs/2506.21401">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/alexeybokhovkin/SceneFactor" class="external-link" disabled>
+      <a class="icon-link" href="https://zhirui-gao.github.io/CurveGaussian/" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
