@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Self-supervised Learning of Hybrid Part-aware 3D Representation of 2D Gaussians and Superquadrics">
+  <meta name="keywords" content="Guassian Splatting, 2D Gaussians, Superquadrics, 3D, part-aware, reconstruction, Self-supervised">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+   <title>Self-supervised Learning of Hybrid Part-aware 3D Representation of 2D Gaussians and Superquadrics</title>
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/juxtapose.css">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://www.3dunderstanding.org/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://zhirui-gao.github.io/CurveGaussian/">
+            Curve-Aware Gaussian Splatting for 3D Parametric Curve Reconstruction
+          </a>
+          <a class="navbar-item" href="https://github.com/zhirui-gao/PartGS">
+            Self-supervised Learning of Hybrid Part-aware 3D Representation of 2D Gaussians and Superquadrics
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Learning Self-supervised Part-aware 3D Hybrid Representations of 2D Gaussians and Superquadrics</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=IqtwGzYAAAAJ&hl=zh-CN">Zhirui Gao</a>
+            </span>
+            <span class="author-block">
+              <a href="https://renjiaoyi.github.io/">Renjiao Yi</a>
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=OAULSygAAAAJ&hl=zh-CN"> Huang Yuhang</a>
+            </span>
+            <span class="author-block">
+              <a href="https://openreview.net/profile?id=~Wei_Chen35">Wei Chen</a>
+            </span>
+            <span class="author-block">
+              <a href="https://www.zhuchenyang.net/">Chenyang Zhu</a>
+            </span>
+            <span class="author-block">
+              <a href="https://kevinkaixu.net/">Kai Xu</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">National University of Defense Technology</span>
+          </div>
+         
+          <div class="is-size-5 publication-authors">
+  <span class="author-block" style="color: #d52b1e; font-weight: 600;">ICCV 2025</span>
+</div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2408.10789"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2408.10789"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://github.com/zhirui-gao/PartGS"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/zhirui-gao/PartGS"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-6">
+      <h3 class="title is-4">PartGS enables both the block-level and point-
+level part-aware reconstructions,  preserving both part decomposition and reconstruction precision.</h3>
+        <div class="video-container" style="max-width: 80%; margin: 0 auto;">
+        <video id="teaser" autoplay loop muted playsinline style="width: 100%; height: auto; border-radius: 8px;">
+          <source src="static/videos/scan63.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <h2 class="subtitle is-5 has-text-centered" style="max-width: 80%; margin: 1.5rem auto 0; line-height: 1.6;">
+         PartGS is a self-supervised part-aware reconstruction framework that integrates 2D Gaussians and superquadrics to
+parse objects and scenes into an interpretable decomposition, leveraging multi-view image inputs to uncover 3D structural
+information.
+        </h2>
+    </div>
+  </div>
+</section>
+
+<!-- 在CSS中添加 -->
+<style>
+  .teaser-gif {
+    width: 100%;
+    max-height: 80vh;
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+
+
+<section class="section">
+  <div class="container">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+        
+       
+          <p>
+             Low-level 3D representations, such as point clouds, meshes, NeRFs and 3D Gaussians, are commonly used for modeling 3D objects and scenes. However, cognitive studies indicate that human perception operates at higher levels and interprets 3D environments by decomposing them into meaningful structural parts, rather than  low-level elements like points or voxels. Structured geometric decomposition enhances scene interpretability and facilitates downstream tasks requiring component-level manipulation. 
+          </p>
+            
+          <p>
+             In this work, we introduce PartGS, a self-supervised part-aware reconstruction framework that integrates 2D Gaussians and superquadrics to parse objects and scenes into an interpretable decomposition, leveraging multi-view image inputs to uncover 3D structural information. Our method jointly optimizes superquadric meshes and Gaussians by coupling their parameters within a hybrid representation. On one hand, superquadrics enable the representation of a wide range of shape primitives, facilitating flexible and meaningful decompositions. On the other hand, 2D Gaussians capture detailed texture and geometric details, ensuring high-fidelity appearance and geometry reconstruction.
+          </p>
+            
+          <p>
+            Operating in a self-supervised manner, our approach demonstrates superior performance compared to state-of-the-art methods across extensive experiments on the DTU, ShapeNet, and real-world datasets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Abstract. -->
+</section>
+
+
+
+<section>
+  <!-- Paper image. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-6">
+      <h2 class="title is-2">Method Overview</h2>
+      <div class="publication-image">
+        <img src="static/images/pipeline.png" alt="Scenethesis Demo" style="max-width: 100%; height: auto;">
+          <h2 class="subtitle is-8 has-text-centered" style="max-width: 100%; margin: 0.2rem auto 0; line-height: 1.2;">
+        PartGS takes multi-view images to learn a parametric hybrid representation of superquadrics and 2D Gaussians. It initializes from random superquadrics and is gradually optimized during training to get a block-level reconstruction. Then, we free the constraints of Gaussians to model detailed geometry to get a point-level reconstruction. The last column demonstrates one application, physics simulations, where one part is picked out and thrown to other parts.</p>
+      </div>
+    </div>
+  </div>
+  <!--/ Paper image. -->
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+        <h3 class="title is-3">Experimnets on DTU and ShapeNet dataset</h3>
+        <div class="content has-text-justified">
+          <p>
+             Qualitative comparisons to state-of-the-art 3D part-aware reoncstruction approaches: <a href="https://github.com/bmlklwx/EMS-superquadric_fitting">EMS</a>, 
+            
+            <a href="https://github.com/MichaelRamamonjisoa/MonteBoxFinder">MonteBoxFinder</a>,  <a href="https://ktertikas.github.io/part_nerf">PartNeRF</a>,  
+            and <a href="https://tmonnier.com/DBW/">DBW</a>.  Our method is the only one that provides reasonable 3D part decomposition while capturing detailed geometry.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- GIF 1 (First Row) -->
+    <div class="columns is-centered" style="margin-top: 1rem;">
+      <div class="column is-two-thirds">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image">
+              <img src="static/images/compare.png" alt=" Reconstruction">
+            </figure>
+          </div>
+     
+        </div>
+      </div>
+    </div>
+    
+   
+
+
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="title is-2">DTU dataset</h3>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-addition has-text-centered">
+          <h5 class="title is-5"></h5>
+    
+          <video poster="" id="addition" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/scan40.mp4"
+                    type="video/mp4">
+          </video>
+          <h5 class="title is-5"> </h5>
+        </div>
+        <div class="item item-size has-text-centered">
+          <h5 class="title is-5"></h5>
+    
+          <video poster="" id="size" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/scan55.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="item item-size has-text-centered">
+          <h5 class="title is-5"></h5>
+    
+          <video poster="" id="size" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/scan106.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-replacement has-text-centered">
+          <h5 class="title is-5"></h5>
+     
+          <video poster="" id="replacement" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/scan63.mp4"
+                    type="video/mp4">
+          </video>
+          <h5 class="title is-5"> </h5>
+        </div>
+        <div class="item item-move has-text-centered">
+          <h5 class="title is-5"></h5>
+
+          <video poster="" id="move" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/scan69.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-removal has-text-centered">
+          <h5 class="title is-5"></h5>
+        
+          <video poster="" id="removal" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/scan105.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="item item-size has-text-centered">
+          <h5 class="title is-5"></h5>
+    
+          <video poster="" id="size" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/scan114.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+          <div class="item item-size has-text-centered">
+          <h5 class="title is-5"></h5>
+    
+          <video poster="" id="size" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/scan122.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h3 class="title is-2">ShapNet dataset</h3>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-addition has-text-centered">
+          <h5 class="title is-5"></h5>
+    
+          <video poster="" id="addition" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/1a6f615e8b1b5ae4dbbc9440457e303e.mp4"
+                    type="video/mp4">
+          </video>
+          <h5 class="title is-5"> </h5>
+        </div>
+        <div class="item item-size has-text-centered">
+          <h5 class="title is-5"></h5>
+    
+          <video poster="" id="size" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/1a32f10b20170883663e90eaf6b4ca52.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="item item-size has-text-centered">
+          <h5 class="title is-5"></h5>
+    
+          <video poster="" id="size" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/1a9036f081dd51683a9bf8c718fc345e.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-replacement has-text-centered">
+          <h5 class="title is-5"></h5>
+     
+          <video poster="" id="replacement" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/1a153612bcdab3e23cc149415a408229.mp4"
+                    type="video/mp4">
+          </video>
+          <h5 class="title is-5"> </h5>
+        </div>
+        <div class="item item-move has-text-centered">
+          <h5 class="title is-5"></h5>
+
+          <video poster="" id="move" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/1b7ba5484399d36bc5e50b867ca2d0b9.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-removal has-text-centered">
+          <h5 class="title is-5"></h5>
+        
+          <video poster="" id="removal" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/1bdeb4aaa0aaea4b4f95630cc18536e0.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="item item-size has-text-centered">
+          <h5 class="title is-5"></h5>
+    
+          <video poster="" id="size" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/1e83ef6ed5d0b78b7efb854782e23566.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        
+          <div class="item item-size has-text-centered">
+          <h5 class="title is-5"></h5>
+    
+          <video poster="" id="size" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/2a0ac4cb28aeea64eb127ea937b74f9c.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+        <h3 class="title is-3">Application</h3>
+        <div class="content has-text-justified">
+          <p>
+           This section illustrates three applications of our method that orig-
+inal 3DGS and NeRF-based approaches do not support.
+Firstly, The part decomposition facilitats easy editing of specific object or scene compo-
+nents, e.g., adding, moving, removing, or scaling. Secondly, our method enables
+the creation of new high-quality 3D content. Additionally,
+our method enables easy manipulation of objects within a
+scene, supporting physics-based simulations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds"> <!-- Changed from is-full-width to is-two-thirds -->
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content">
+              <img src="static/images/appli.png" style="max-width: 80%; height: auto; margin: 0 auto; display: block;"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content" style="margin-top: 2rem;">
+          <video controls style="max-width: 80%; height: auto; margin: 0 auto; display: block; border-radius: 6px;">
+            <source src="static/videos/physics simulations.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="has-text-centered" style="margin-top: 1rem;">Video demonstration of the  simulation capabilities</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+  @misc{gao2025selfsupervisedlearninghybridpartaware,
+      title={Self-supervised Learning of Hybrid Part-aware 3D Representation of 2D Gaussians and Superquadrics}, 
+      author={Zhirui Gao and Renjiao Yi and Yuhang Huang and Wei Chen and Chenyang Zhu and Kai Xu},
+      year={2025},
+      eprint={2408.10789},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.10789}, 
+}
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://arxiv.org/abs/2408.10789">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/zhirui-gao/PartGS" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The website source code borrowed from <a href="https://github.com/nerfies/nerfies.github.io">here</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
