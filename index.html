@@ -2,821 +2,729 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<script src="https://kit.fontawesome.com/0d3f0e0034.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-	<link rel="shortcut icon" href="">
-	<link rel="stylesheet" href="jemdoc.css" type="text/css">
-	<title>Zhirui Gao - Homepage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://kit.fontawesome.com/0d3f0e0034.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="jemdoc.css" type="text/css">
+    <title>Zhirui Gao - Homepage</title>
 
-	<style>
-		/* ============ 全局与变量 ============ */
-		:root {
-			--ccfa-red: #d93025;
-			--ccfa-gold: #e8a817;
-			--ccfa-gradient: linear-gradient(135deg, #d93025 0%, #c0392b 40%, #e8a817 100%);
-			--badge-blue: #3b6fb6;
-			--badge-blue-gradient: linear-gradient(135deg, #4a90d9 0%, #357abd 100%);
-			--bg-soft: #f0f2f5;
-			--card-white: #ffffff;
-			--text-dark: #1a1a2e;
-			--text-medium: #333;
-			--accent-orange: #e75e0a;
-			--shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-			--shadow-md: 0 4px 20px rgba(0, 0, 0, 0.10);
-			--shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
-			--radius-sm: 6px;
-			--radius-md: 10px;
-			--radius-lg: 14px;
-			--transition-fast: 0.2s ease;
-		}
+    <style>
+        /* ============ 全局与变量 ============ */
+        :root {
+            --ccfa-red: #d93025;
+            --ccfa-gold: #e8a817;
+            --ccfa-gradient: linear-gradient(135deg, #d93025 0%, #c0392b 40%, #e8a817 100%);
+            --badge-blue: #3b6fb6;
+            --badge-blue-gradient: linear-gradient(135deg, #4a90d9 0%, #357abd 100%);
+            --bg-soft: #f0f2f5;
+            --card-white: #ffffff;
+            --text-dark: #1a1a2e;
+            --text-medium: #333;
+            --accent-orange: #e75e0a;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.10);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 14px;
+            --transition-fast: 0.2s ease;
+        }
 
-		/* ============ 主内容区 ============ */
-		#layout-content {
-			background-color: var(--card-white);
-			max-width: 940px;
-			margin: 25px auto 40px;
-			padding: 30px 32px 20px;
-			box-shadow: var(--shadow-lg);
-			border-radius: var(--radius-lg);
-			position: relative;
-			overflow: visible;
-		}
+        /* ============ 主内容区 ============ */
+        #layout-content {
+            background-color: var(--card-white);
+            max-width: 940px;
+            margin: 25px auto 40px;
+            padding: 30px 32px 20px;
+            box-shadow: var(--shadow-lg);
+            border-radius: var(--radius-lg);
+            position: relative;
+            overflow: visible;
+        }
 
-		/* 顶部装饰条 */
-		#layout-content::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			height: 5px;
-			background: linear-gradient(90deg, #d93025 0%, #e8a817 25%, #e75e0a 50%, #d93025 75%, #c0392b 100%);
-			border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-			z-index: 1;
-		}
+        /* 顶部装饰条 */
+        #layout-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #d93025 0%, #e8a817 25%, #e75e0a 50%, #d93025 75%, #c0392b 100%);
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+            z-index: 1;
+        }
 
-		body {
-			background-color: #e8ecf1;
-			background-image:
-				radial-gradient(ellipse at 20% 20%, rgba(217, 48, 37, 0.03) 0%, transparent 50%),
-				radial-gradient(ellipse at 80% 60%, rgba(232, 168, 23, 0.03) 0%, transparent 50%),
-				radial-gradient(ellipse at 50% 90%, rgba(59, 111, 182, 0.03) 0%, transparent 50%);
-			padding: 0 0;
-			min-height: 100vh;
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-			line-height: 1.6;
-			color: var(--text-medium);
-		}
+        body {
+            background-color: #e8ecf1;
+            background-image:
+                radial-gradient(ellipse at 20% 20%, rgba(217, 48, 37, 0.03) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 60%, rgba(232, 168, 23, 0.03) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 90%, rgba(59, 111, 182, 0.03) 0%, transparent 50%);
+            padding: 0 0;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-medium);
+        }
 
-		#layout-content table {
-			margin-bottom: 20px;
-		}
+        #layout-content table {
+            margin-bottom: 20px;
+        }
 
-		@media (max-width: 768px) {
-			#layout-content {
-				padding: 18px 14px;
-				margin: 10px auto;
-				border-radius: var(--radius-md);
-			}
-			#layout-content::before {
-				height: 4px;
-				border-radius: var(--radius-md) var(--radius-md) 0 0;
-			}
-		}
+        @media (max-width: 768px) {
+            #layout-content {
+                padding: 18px 14px;
+                margin: 10px auto;
+                border-radius: var(--radius-md);
+            }
+            #layout-content::before {
+                height: 4px;
+                border-radius: var(--radius-md) var(--radius-md) 0 0;
+            }
+        }
 
-		/* ============ 链接 ============ */
-		h4 a {
-			color: #0066cc !important;
-			text-decoration: none;
-			transition: color var(--transition-fast);
-		}
-		h4 a:hover {
-			color: #004a99 !important;
-			text-decoration: underline;
-		}
-		h1 a {
-			color: var(--accent-orange) !important;
-			text-decoration: none;
-			transition: color var(--transition-fast);
-		}
-		h1 a:hover {
-			color: #c94d08 !important;
-		}
+        /* ============ 链接 ============ */
+        h4 a {
+            color: #0066cc !important;
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        h4 a:hover {
+            color: #004a99 !important;
+            text-decoration: underline;
+        }
+        h1 a {
+            color: var(--accent-orange) !important;
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        h1 a:hover {
+            color: #c94d08 !important;
+        }
 
-		html {
-			font-size: 17px;
-		}
+        html {
+            font-size: 17px;
+        }
 
-		/* ============ Section 标题 ============ */
-		h2 {
-			font-size: 1.5rem;
-			font-weight: 700;
-			color: #1a1a2e;
-			margin-top: 28px;
-			margin-bottom: 14px;
-			padding-bottom: 8px;
-			border-bottom: 3px solid #e8e8e8;
-			position: relative;
-			letter-spacing: -0.3px;
-		}
-		h2::after {
-			content: '';
-			position: absolute;
-			bottom: -3px;
-			left: 0;
-			width: 60px;
-			height: 3px;
-			background: var(--ccfa-gradient);
-			border-radius: 2px;
-		}
+        /* ============ Section 标题 ============ */
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-top: 28px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #e8e8e8;
+            position: relative;
+            letter-spacing: -0.3px;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--ccfa-gradient);
+            border-radius: 2px;
+        }
 
-		/* ============ 身份区域 ============ */
-		#toptitle h1 {
-			font-size: 2rem;
-			margin-bottom: 6px;
-			letter-spacing: -0.5px;
-		}
-		#toptitle h3 {
-			font-size: 1.15rem;
-			font-weight: 600;
-			color: #555;
-			margin-top: 2px;
-			margin-bottom: 8px;
-		}
-		#toptitle p {
-			color: #666;
-			line-height: 1.5;
-		}
-		#toptitle code {
-			background: #f5f5f5;
-			padding: 3px 7px;
-			border-radius: 4px;
-			font-size: 0.9rem;
-			color: #444;
-		}
+        /* ============ 身份区域 ============ */
+        #toptitle h1 {
+            font-size: 2rem;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+        #toptitle h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #555;
+            margin-top: 2px;
+            margin-bottom: 8px;
+        }
+        #toptitle p {
+            color: #666;
+            line-height: 1.5;
+        }
+        #toptitle code {
+            background: #f5f5f5;
+            padding: 3px 7px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #444;
+        }
 
-		/* ============ Badge 基础样式 ============ */
-		.badge-base {
-			display: inline-block;
-			font-weight: 700;
-			font-size: 0.78rem;
-			padding: 5px 11px;
-			border-radius: 5px;
-			letter-spacing: 0.3px;
-			text-transform: uppercase;
-			margin-bottom: 6px;
-			line-height: 1;
-			white-space: nowrap;
-			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
-			transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-		}
-		.badge-base:hover {
-			transform: translateY(-1px);
-			box-shadow: 0 3px 8px rgba(0, 0, 0, 0.22);
-		}
+        /* ============ Badge 基础样式 ============ */
+        .badge-base {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 0.78rem;
+            padding: 5px 11px;
+            border-radius: 5px;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            line-height: 1;
+            white-space: nowrap;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+        .badge-base:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.22);
+        }
 
-		/* CCF-A 红色金标 */
-		.badge-ccfa {
-			background: var(--ccfa-gradient);
-			color: #fff;
-			border: 1px solid rgba(180, 30, 20, 0.6);
-			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-			animation: badgePulse 3s ease-in-out infinite;
-		}
-		@keyframes badgePulse {
-			0%,
-			100% {
-				box-shadow: 0 1px 4px rgba(217, 48, 37, 0.4);
-			}
-			50% {
-				box-shadow: 0 2px 10px rgba(217, 48, 37, 0.7), 0 0 16px rgba(232, 168, 23, 0.35);
-			}
-		}
+        /* CCF-A 红色金标 */
+        .badge-ccfa {
+            background: var(--ccfa-gradient);
+            color: #fff;
+            border: 1px solid rgba(180, 30, 20, 0.6);
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+            animation: badgePulse 3s ease-in-out infinite;
+        }
+        @keyframes badgePulse {
+            0%,
+            100% {
+                box-shadow: 0 1px 4px rgba(217, 48, 37, 0.4);
+            }
+            50% {
+                box-shadow: 0 2px 10px rgba(217, 48, 37, 0.7), 0 0 16px rgba(232, 168, 23, 0.35);
+            }
+        }
 
-		/* 普通蓝色badge */
-		.badge-normal {
-			background: var(--badge-blue-gradient);
-			color: #fff;
-			border: 1px solid rgba(40, 90, 150, 0.5);
-		}
+        /* 普通蓝色badge */
+        .badge-normal {
+            background: var(--badge-blue-gradient);
+            color: #fff;
+            border: 1px solid rgba(40, 90, 150, 0.5);
+        }
 
-		/* ============ Publication 条目 ============ */
-		.pub-row td {
-			vertical-align: middle;
-			padding: 8px 6px;
-		}
-		.pub-row img {
-			width: 100%;
-			max-width: 220px;
-			border-radius: var(--radius-sm);
-			box-shadow: var(--shadow-sm);
-			transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-		}
-		.pub-row img:hover {
-			transform: scale(1.03);
-			box-shadow: var(--shadow-md);
-		}
-		.pub-row ul {
-			margin: 0;
-			padding-left: 18px;
-			list-style-type: none;
-		}
-		.pub-row ul li {
-			margin-bottom: 2px;
-			position: relative;
-			padding-left: 6px;
-		}
-		.pub-row ul li a {
-			font-weight: 600;
-			color: #1a3a5c;
-			text-decoration: none;
-			transition: color var(--transition-fast);
-		}
-		.pub-row ul li a:hover {
-			color: #d93025;
-			text-decoration: underline;
-		}
-		.pub-row p {
-			margin-top: 4px;
-			margin-bottom: 0;
-		}
-		.pub-row p a {
-			font-size: 0.88rem;
-			color: #0066cc;
-			margin-right: 6px;
-			text-decoration: none;
-			transition: color var(--transition-fast);
-		}
-		.pub-row p a:hover {
-			color: #d93025;
-			text-decoration: underline;
-		}
-		/* 高亮行 */
-		.pub-highlight {
-			background-color: #fffef5 !important;
-			border-left: 4px solid #e8a817;
-			border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-		}
+        /* ============ Publication 条目 ============ */
+        .pub-row td {
+            vertical-align: middle;
+            padding: 8px 6px;
+        }
+        .pub-row img {
+            width: 100%;
+            max-width: 220px;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-sm);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+        .pub-row img:hover {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-md);
+        }
+        .pub-row ul {
+            margin: 0;
+            padding-left: 18px;
+            list-style-type: none;
+        }
+        .pub-row ul li {
+            margin-bottom: 2px;
+            position: relative;
+            padding-left: 6px;
+        }
+        .pub-row ul li a {
+            font-weight: 600;
+            color: #1a3a5c;
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        .pub-row ul li a:hover {
+            color: #d93025;
+            text-decoration: underline;
+        }
+        .pub-row p {
+            margin-top: 4px;
+            margin-bottom: 0;
+        }
+        .pub-row p a {
+            font-size: 0.88rem;
+            color: #0066cc;
+            margin-right: 6px;
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+        .pub-row p a:hover {
+            color: #d93025;
+            text-decoration: underline;
+        }
+        /* 高亮行 */
+        .pub-highlight {
+            background-color: #fffef5 !important;
+            border-left: 4px solid #e8a817;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        }
 
-		/* ============ 信息标签组 ============ */
-		.tag-row {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 8px;
-			margin-top: 8px;
-		}
-		.info-tag {
-			display: inline-flex;
-			align-items: center;
-			gap: 4px;
-			font-size: 0.82rem;
-			padding: 4px 10px;
-			border-radius: 20px;
-			background: #f0f4f8;
-			color: #3b6fb6;
-			font-weight: 500;
-			border: 1px solid #dce6f0;
-			transition: all var(--transition-fast);
-		}
-		.info-tag:hover {
-			background: #e4ecf4;
-			border-color: #b0c8e0;
-		}
-		.info-tag.ccfa-tag {
-			background: #fef3f2;
-			color: #d93025;
-			border-color: #f5c6c2;
-			font-weight: 600;
-		}
-		.info-tag.ccfa-tag:hover {
-			background: #fde8e6;
-			border-color: #e8a0a0;
-		}
+        /* ============ 信息标签组 ============ */
+        .tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .info-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.82rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: #f0f4f8;
+            color: #3b6fb6;
+            font-weight: 500;
+            border: 1px solid #dce6f0;
+            transition: all var(--transition-fast);
+        }
+        .info-tag:hover {
+            background: #e4ecf4;
+            border-color: #b0c8e0;
+        }
+        .info-tag.ccfa-tag {
+            background: #fef3f2;
+            color: #d93025;
+            border-color: #f5c6c2;
+            font-weight: 600;
+        }
+        .info-tag.ccfa-tag:hover {
+            background: #fde8e6;
+            border-color: #e8a0a0;
+        }
 
-		/* ============ News & Lists ============ */
-		#news ul,
-		#education ul,
-		#award ul,
-		#service ul {
-			list-style-type: none;
-			padding-left: 0;
-		}
-		#news ul li,
-		#education ul li,
-		#award ul li,
-		#service ul li {
-			padding: 5px 0;
-			padding-left: 20px;
-			position: relative;
-			line-height: 1.55;
-		}
-		#news ul li::before {
-			content: '▸';
-			position: absolute;
-			left: 0;
-			color: #d93025;
-			font-weight: bold;
-			font-size: 0.85rem;
-		}
-		#education ul li::before {
-			content: '🎓';
-			position: absolute;
-			left: 0;
-			font-size: 0.75rem;
-		}
-		#award ul li::before {
-			content: '🏅';
-			position: absolute;
-			left: 0;
-			font-size: 0.75rem;
-		}
-		#service ul li::before {
-			content: '📋';
-			position: absolute;
-			left: 0;
-			font-size: 0.75rem;
-		}
-		#news ul li a {
-			color: #0066cc;
-			text-decoration: none;
-			font-weight: 500;
-		}
-		#news ul li a:hover {
-			color: #d93025;
-			text-decoration: underline;
-		}
+        /* ============ News & Lists ============ */
+        #news ul,
+        #education ul,
+        #award ul,
+        #service ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        #news ul li,
+        #education ul li,
+        #award ul li,
+        #service ul li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.55;
+        }
+        #news ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #d93025;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        #education ul li::before {
+            content: '🎓';
+            position: absolute;
+            left: 0;
+            font-size: 0.75rem;
+        }
+        #award ul li::before {
+            content: '🏅';
+            position: absolute;
+            left: 0;
+            font-size: 0.75rem;
+        }
+        #service ul li::before {
+            content: '📋';
+            position: absolute;
+            left: 0;
+            font-size: 0.75rem;
+        }
+        #news ul li a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        #news ul li a:hover {
+            color: #d93025;
+            text-decoration: underline;
+        }
 
-		/* ============ Education 时间右对齐 ============ */
-		.edu-date {
-			float: right;
-			text-align: right;
-			color: #777;
-			font-weight: 500;
-			font-size: 0.9rem;
-		}
-		.edu-item {
-			clear: both;
-			margin-bottom: 6px;
-		}
+        /* ============ Education 时间右对齐 ============ */
+        .edu-date {
+            float: right;
+            text-align: right;
+            color: #777;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .edu-item {
+            clear: both;
+            margin-bottom: 6px;
+        }
 
-		/* ============ Award 时间 ============ */
-		.award-date {
-			float: right;
-			text-align: right;
-			color: #999;
-			font-size: 0.85rem;
-			font-weight: 500;
-		}
+        /* ============ Award 时间 ============ */
+        .award-date {
+            float: right;
+            text-align: right;
+            color: #999;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
 
-		/* ============ Footer ============ */
-		#footer p,
-		#layout-content>p:last-child {
-			text-align: center;
-			color: #aaa;
-			font-size: 0.82rem;
-			margin-top: 20px;
-		}
+        /* ============ Footer ============ */
+        #footer p,
+        #layout-content>p:last-child {
+            text-align: center;
+            color: #aaa;
+            font-size: 0.82rem;
+            margin-top: 20px;
+        }
 
-		/* ============ 链接图标微调 ============ */
-		.icon {
-			margin-right: 1px;
-		}
-		h4 .icon i {
-			font-size: 0.95rem;
-		}
+        /* ============ 链接图标微调 ============ */
+        .icon {
+            margin-right: 1px;
+        }
+        h4 .icon i {
+            font-size: 0.95rem;
+        }
 
-		/* ============ 响应式 ============ */
-		@media (max-width: 640px) {
-			.pub-row img {
-				max-width: 120px;
-			}
-			.badge-base {
-				font-size: 0.7rem;
-				padding: 3px 7px;
-			}
-			h2 {
-				font-size: 1.3rem;
-			}
-			#toptitle h1 {
-				font-size: 1.6rem;
-			}
-			.edu-date,
-			.award-date {
-				float: none;
-				display: block;
-				text-align: left;
-				margin-top: 2px;
-			}
-		}
-	</style>
+        /* ============ 响应式 ============ */
+        @media (max-width: 640px) {
+            .pub-row img {
+                max-width: 120px;
+            }
+            .badge-base {
+                font-size: 0.7rem;
+                padding: 3px 7px;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+            #toptitle h1 {
+                font-size: 1.6rem;
+            }
+            .edu-date,
+            .award-date {
+                float: none;
+                display: block;
+                text-align: left;
+                margin-top: 2px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-	<div id="layout-content" style="margin-top:25px">
-		<table>
-			<tbody>
-				<tr>
-					<!-- Identity -->
-					<td width="100%">
-						<div id="toptitle">
-							<h1>
-								<a href="https://github.com/zhirui-gao">Zhirui Gao</a> 
-							</h1>
-							<h3>Researcher, Embodied AI @ Huawei</h3>
-							<p>
-								Email: <u><code>gzrer2018 [at] gmail.com</code></u>
-							</p>
-							<h4>
-								<a href="./assets/zhirui_CV.pdf">
-									<span class="icon"><i class="fa-solid fa-file-lines"></i>[Curriculum Vitae]</span>
-								</a>
-								&nbsp;
-								<a href="https://scholar.google.com/citations?user=IqtwGzYAAAAJ&hl=zh-CN">
-									<span class="icon"><i class="fa-solid fa-graduation-cap"></i>[Google Scholar]</span>
-								</a>
-								&nbsp;
-								<a href="https://github.com/zhirui-gao">
-									<span class="icon"><i class="fa-brands fa-github"></i>[GitHub]</span>
-								</a>
-								&nbsp;
-								<a href="https://zhirui-gao.github.io/wechat.html">
-									<span class="icon"><i class="fa-brands fa-weixin"></i>[WeChat]</span>
-								</a>
-							</h4>
-							<!-- 快速标签 -->
-							<div class="tag-row">
-								<span class="info-tag ccfa-tag">🏆 5× CCF-A Papers</span>
-								<span class="info-tag">🤖 Embodied AI</span>
-								<span class="info-tag">🧊 3D Vision</span>
-								<span class="info-tag">🌍 World Models</span>
-							</div>
-						</div>
-					</td>
-					<!-- Portrait -->
-					<td width="100%">
-						<img src="assets/portrait.png" height="250" style="border-radius:50%; box-shadow: var(--shadow-md);" alt="Zhirui Gao" />
-					</td>
-				</tr>
-			</tbody>
-		</table>
+    <div id="layout-content" style="margin-top:25px">
+        <table>
+            <tbody>
+                <tr>
+                    <!-- Identity -->
+                    <td width="100%">
+                        <div id="toptitle">
+                            <h1>
+                                <a href="https://github.com/zhirui-gao">Zhirui Gao</a> 
+                            </h1>
+                            <h3>Researcher, Embodied AI @ Huawei</h3>
+                            <p>
+                                Email: <u><code>gzrer2018 [at] gmail.com</code></u>
+                            </p>
+                            <h4>
+                                <a href="./assets/zhirui_CV.pdf">
+                                    <span class="icon"><i class="fa-solid fa-file-lines"></i>[Curriculum Vitae]</span>
+                                </a>
+                                &nbsp;
+                                <a href="https://scholar.google.com/citations?user=IqtwGzYAAAAJ&hl=zh-CN">
+                                    <span class="icon"><i class="fa-solid fa-graduation-cap"></i>[Google Scholar]</span>
+                                </a>
+                                &nbsp;
+                                <a href="https://github.com/zhirui-gao">
+                                    <span class="icon"><i class="fa-brands fa-github"></i>[GitHub]</span>
+                                </a>
+                                &nbsp;
+                                <a href="https://zhirui-gao.github.io/wechat.html">
+                                    <span class="icon"><i class="fa-brands fa-weixin"></i>[WeChat]</span>
+                                </a>
+                            </h4>
+                            <!-- 快速标签 + 顶会统计 -->
+                            <div class="tag-row">
+                                <span class="info-tag ccfa-tag">🏆 6× CCF-A Papers</span>
+                                <span class="info-tag" style="background:#e6f7e6; color:#2e7d32; border-color:#a5d6a7;">🏅 1× SIGGRAPH Asia 2026</span>
+                                <span class="info-tag" style="background:#e3f2fd; color:#0d47a1; border-color:#90caf9;">🥇 1× ECCV 2026 Oral</span>
+                                <span class="info-tag">🤖 Embodied AI</span>
+                                <span class="info-tag">🧊 3D Vision</span>
+                                <span class="info-tag">🌍 World Models</span>
+                            </div>
+                        </div>
+                    </td>
+                    <!-- Portrait -->
+                    <td width="100%">
+                        <img src="assets/portrait.png" height="250" style="border-radius:50%; box-shadow: var(--shadow-md);" alt="Zhirui Gao" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-		<div id="biography">
-			<h2>👤 Biography</h2>
-			<p style="text-align:justify">
-				Hi there👋, my name is Zhirui Gao (in Chinese: 高志锐).
-			</p>
-			<p>
-				I received my Ph.D. degree from <b>National University of Defense Technology</b> (2021–2026), supervised by
-				<a href="https://kevinkaixu.net/">Prof. Kai Xu</a>, Prof. Wei Chen, and <a href="https://renjiaoyi.github.io/">Assoc. Prof. Renjiao Yi</a>.
-				Prior to that, I earned my Bachelor's degree from China University of Geosciences (2017–2021).
-			</p>
-			<p>
-				I am currently a researcher at <b>Huawei</b> focusing on <b>Embodied AI</b>. My research interests broadly lie in
-				<b>3D Vision and Embodied Intelligence</b>, including 3D Reconstruction, World Models, WAM, and VLA models.
-			</p>
-			<p>
-				I am open to collaborations and actively recruiting research interns and full-time employees. Feel free to reach out via email!
-			</p>
-		</div><br />
+        <div id="biography">
+            <h2>👤 Biography</h2>
+            <p style="text-align:justify">
+                Hi there👋, my name is Zhirui Gao (in Chinese: 高志锐).
+            </p>
+            <p>
+                I received my Ph.D. degree from <b>National University of Defense Technology</b> (2021–2026), supervised by
+                <a href="https://kevinkaixu.net/">Prof. Kai Xu</a>, Prof. Wei Chen, and <a href="https://renjiaoyi.github.io/">Assoc. Prof. Renjiao Yi</a>.
+                Prior to that, I earned my Bachelor's degree from China University of Geosciences (2017–2021).
+            </p>
+            <p>
+                I am currently a researcher at <b>Huawei</b> focusing on <b>Embodied AI</b>. My research interests broadly lie in
+                <b>3D Vision and Embodied Intelligence</b>, including 3D Reconstruction, World Models, WAM, and VLA models.
+            </p>
+            <p>
+                I am open to collaborations and actively recruiting research interns and full-time employees. Feel free to reach out via email!
+            </p>
+        </div><br />
 
-		<div id="news">
-			<h2>📢 News</h2>
-			<ul>
-				<li>
-					[2025-07] Our paper <a href="https://lanlan96.github.io/BoxFusion/">BoxFusion</a> is accepted by <b>Pacific Graphics 2025</b>.
-				</li>
-				<li>
-					[2025-06] 🏆 Two papers are accepted by <b>ICCV 2025</b> <span class="info-tag ccfa-tag" style="font-size:0.7rem;padding:2px 7px;">CCF-A</span>!
-					(<a href="https://zhirui-gao.github.io/PartGS/">PartGS</a> and <a href="https://zhirui-gao.github.io/CurveGaussian/">CurveGaussian</a>).
-				</li>
-				<li>
-					[2025-02] Our paper <a href="https://zhirui-gao.github.io/PoseProbe.github.io/">PoseProbe</a> is accepted by <b>IEEE TCSVT</b>.
-				</li>
-				<li>
-					[2023-12] Our paper <a href="https://ieeexplore.ieee.org/abstract/document/10446550/">Fdc-nerf</a> is accepted by <b>ICASSP (Oral)</b>,
-					thanks for <a href="https://gaohchen.github.io/">Huachen</a>.
-				</li>
-				<li>
-					[2023-06] 🏆 Our paper <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Li_2D3D-MATR_2D-3D_Matching_Transformer_for_Detection-Free_Registration_Between_Images_and_ICCV_2023_paper.html">2d3d-matr</a> is accepted by <b>ICCV 2023</b> <span class="info-tag ccfa-tag" style="font-size:0.7rem;padding:2px 7px;">CCF-A</span>!
-				</li>
-				<li>
-					[2023-04] 🏆 Our paper <a href="https://ieeexplore.ieee.org/abstract/document/10168686/">Delving Into Crispness</a> is accepted by <b>IEEE TIP</b> <span class="info-tag ccfa-tag" style="font-size:0.7rem;padding:2px 7px;">CCF-A</span>!
-				</li>
-				<li>
-					[2023-03] 🏆 Our paper <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Ye_NEF_Neural_Edge_Fields_for_3D_Parametric_Curve_Reconstruction_From_CVPR_2023_paper.html">NEF</a> is accepted by <b>CVPR 2023</b> <span class="info-tag ccfa-tag" style="font-size:0.7rem;padding:2px 7px;">CCF-A</span>!
-				</li>
-				<li>
-					[2023-01] Our paper <a href="https://ieeexplore.ieee.org/abstract/document/10897650/">Deep Template Matching</a> is accepted by <b>IEEE CVMJ</b> (IF:18.3)!
-				</li>
-			</ul>
-		</div><br />
+        <div id="news">
+            <h2>📢 News</h2>
+            <ul>
+                <li>
+                    [2026-07] 🆕 Our paper <b>CGGT</b> (Curve-Grounded Geometry Transformer) is accepted by <b>SIGGRAPH Asia 2026</b> (图形学顶会).
+                </li>
+                <li>
+                    [2026-06] 🆕 Our paper <b>Tetrahedral-Gaussian</b> is accepted as <b>ECCV 2026 Oral</b> (视觉顶会).
+                </li>
+                <li>
+                    [2025-07] Our paper <a href="https://lanlan96.github.io/BoxFusion/">BoxFusion</a> is accepted by <b>Pacific Graphics 2025</b>.
+                </li>
+                <li>
+                    [2025-06] 🏆 Two papers are accepted by <b>ICCV 2025</b> <span class="info-tag ccfa-tag" style="font-size:0.7rem;padding:2px 7px;">CCF-A</span>!
+                    (<a href="https://zhirui-gao.github.io/PartGS/">PartGS</a> and <a href="https://zhirui-gao.github.io/CurveGaussian/">CurveGaussian</a>).
+                </li>
+                <li>
+                    [2025-02] Our paper <a href="https://zhirui-gao.github.io/PoseProbe.github.io/">PoseProbe</a> is accepted by <b>IEEE TCSVT</b>.
+                </li>
+                <li>
+                    [2023-12] Our paper <a href="https://ieeexplore.ieee.org/abstract/document/10446550/">Fdc-nerf</a> is accepted by <b>ICASSP (Oral)</b>,
+                    thanks for <a href="https://gaohchen.github.io/">Huachen</a>.
+                </li>
+                <li>
+                    [2023-06] 🏆 Our paper <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Li_2D3D-MATR_2D-3D_Matching_Transformer_for_Detection-Free_Registration_Between_Images_and_ICCV_2023_paper.html">2d3d-matr</a> is accepted by <b>ICCV 2023</b> <span class="info-tag ccfa-tag" style="font-size:0.7rem;padding:2px 7px;">CCF-A</span>!
+                </li>
+                <li>
+                    [2023-04] 🏆 Our paper <a href="https://ieeexplore.ieee.org/abstract/document/10168686/">Delving Into Crispness</a> is accepted by <b>IEEE TIP</b> <span class="info-tag ccfa-tag" style="font-size:0.7rem;padding:2px 7px;">CCF-A</span>!
+                </li>
+                <li>
+                    [2023-03] 🏆 Our paper <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Ye_NEF_Neural_Edge_Fields_for_3D_Parametric_Curve_Reconstruction_From_CVPR_2023_paper.html">NEF</a> is accepted by <b>CVPR 2023</b> <span class="info-tag ccfa-tag" style="font-size:0.7rem;padding:2px 7px;">CCF-A</span>!
+                </li>
+                <li>
+                    [2023-01] Our paper <a href="https://ieeexplore.ieee.org/abstract/document/10897650/">Deep Template Matching</a> is accepted by <b>IEEE CVMJ</b> (IF:18.3)!
+                </li>
+            </ul>
+        </div><br />
 
-		<div id="publication">
-			<h2>📑 Selected Publications
-				<span style="font-size:0.85rem;font-weight:400;color:#888;margin-left:8px;">
-					[<a href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=IqtwGzYAAAAJ&sortby=pubdate" style="color:#0066cc;">Google Scholar</a>]
-				</span>
-			</h2>
+        <div id="publication">
+            <h2>📑 Selected Publications
+                <span style="font-size:0.85rem;font-weight:400;color:#888;margin-left:8px;">
+                    [<a href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=IqtwGzYAAAAJ&sortby=pubdate" style="color:#0066cc;">Google Scholar</a>]
+                </span>
+            </h2>
 
-			<table>
-				<tbody>
-					<!-- BoxFusion - PG 2025 -->
-					<tr class="pub-row pub-highlight">
-						<td style="padding:0.5%; width:25%; vertical-align:middle">
-							<span class="badge-base badge-normal">PG 2025</span>
-							<img src="teasers/boxfusion.png" style="width:100%; max-width:220px;" alt="BoxFusion" />
-						</td>
-						<td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
-							<ul>
-								<li>
-									<a href="https://arxiv.org/abs/2506.15610">
-										BoxFusion: Reconstruction-Free Open-Vocabulary 3D Object Detection via Real-Time Multi-View Box Fusion
-									</a><br />
-									Yuqing Lan, Chenyang Zhu, <b>Zhirui Gao</b>, Jiazhao Zhang, Yihan Cao, Renjiao Yi, Yijie Wang, Kai Xu<br />
-									<p style="margin-top:3px">
-										[<a href="https://arxiv.org/abs/2506.15610">arXiv</a>]
-										[<a href="https://lanlan96.github.io/BoxFusion/">Project Page</a>]
-										[<a href="https://github.com/lanlan96/BoxFusion">Code</a>]
-									</p>
-								</li>
-								We propose a novel reconstruction-free paradigm for online open-vocabulary 3D object detection,
-								which models structural object layouts with desirable running and memory efficiency.
-							</ul>
-						</td>
-					</tr>
+            <table>
+                <tbody>
+                    <!-- CGGT - SIGGRAPH Asia 2026 (新增) -->
+                    <tr class="pub-row pub-highlight">
+                        <td style="padding:0.5%; width:25%; vertical-align:middle">
+                            <span class="badge-base badge-normal" style="background:#d35400; border-color:#a04000;">SIGGRAPH Asia 2026</span>
+                            <img src="teaser/cggt.jpg" style="width:100%; max-width:220px;" alt="CGGT" />
+                        </td>
+                        <td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        CGGT: Curve-Grounded Geometry Transformer for Structured Curve Reconstruction from Unposed Sparse Views
+                                    </a><br />
+                                    <b>Zhirui Gao</b>, Renjiao Yi, Ruizhen Hu, Yunfan Ye, Chenyang Zhu, Wei Chen, Kai Xu<br />
+                                    <p style="margin-top:3px">
+                                        [<a href="#">Paper (coming soon)</a>]
+                                        [<a href="#">Project Page</a>]
+                                        [<a href="#">Code</a>]
+                                    </p>
+                                </li>
+                                We present CGGT, a unified feed-forward framework that recovers structured curve cues from unposed, sparse images,
+                                integrating a geometry-aware transformer encoder with a curve-aware masked-attention module for cross-view instance association.
+                            </ul>
+                        </td>
+                    </tr>
 
-					<!-- CurveGaussian - ICCV 2025 -->
-					<tr class="pub-row">
-						<td style="padding:0.5%; width:25%; vertical-align:middle">
-							<span class="badge-base badge-ccfa">🏆 ICCV 2025 · CCF-A</span>
-							<img src="teasers/curvegs.png" style="width:100%; max-width:220px;" alt="CurveGaussian" />
-						</td>
-						<td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
-							<ul>
-								<li>
-									<a href="https://arxiv.org/abs/2506.21401">
-										Curve-Aware Gaussian Splatting for 3D Parametric Curve Reconstruction
-									</a><br />
-									<b>Zhirui Gao</b>, Renjiao Yi, Yaqiao Dai, Xuening Zhu, Wei Chen, Chenyang Zhu, Kai Xu<br />
-									<p style="margin-top:3px">
-										[<a href="https://arxiv.org/abs/2506.21401">arXiv</a>]
-										[<a href="https://zhirui-gao.github.io/CurveGaussian/">Project Page</a>]
-										[<a href="https://github.com/zhirui-gao/Curve-Gaussian">Code</a>]
-									</p>
-								</li>
-								We present an end-to-end method for reconstructing 3D parametric curves directly from multi-view edge maps.
-								Contrasting with the existing reconstruct-and-fit pipelines, our one-stage approach optimizes 3D parametric curves directly from 2D edge maps.
-							</ul>
-						</td>
-					</tr>
+                    <!-- Tetrahedral-Gaussian - ECCV 2026 Oral (新增) -->
+                    <tr class="pub-row">
+                        <td style="padding:0.5%; width:25%; vertical-align:middle">
+                            <span class="badge-base badge-normal" style="background:#1a5276; border-color:#1a3a5c;">ECCV 2026 Oral</span>
+                            <img src="teaser/tetragauss.jpg" style="width:100%; max-width:220px;" alt="Tetrahedral-Gaussian" />
+                        </td>
+                        <td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
+                            <ul>
+                                <li>
+                                    <a href="https://arxiv.org/pdf/2607.08398">
+                                        Tetrahedral-Gaussian: Tightly Coupling Tetrahedral Mesh and Gaussian Spheres for Holistic 3D Representation
+                                    </a><br />
+                                    Yaqiao Dai, Renjiao Yi, <b>Zhirui Gao</b>, Wei Chen, Kai Xu, Chenyang Zhu<br />
+                                    <p style="margin-top:3px">
+                                        [<a href="https://arxiv.org/pdf/2607.08398">arXiv</a>]
+                                        [<a href="#">Project Page (coming soon)</a>]
+                                        [<a href="#">Code</a>]
+                                    </p>
+                                </li>
+                                We introduce a novel representation that tightly couples tetrahedral mesh elements with Gaussian spheres,
+                                enabling both high-quality rendering and topology-adaptive optimization within a holistic framework.
+                            </ul>
+                        </td>
+                    </tr>
 
-					<!-- PartGS - ICCV 2025 -->
-					<tr class="pub-row pub-highlight">
-						<td style="width:25%; vertical-align:middle; padding:0.5%;">
-							<span class="badge-base badge-ccfa">🏆 ICCV 2025 · CCF-A</span>
-							<img src="teasers/partgs.png" style="width:100%; max-width:220px;" alt="PartGS" />
-						</td>
-						<td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
-							<ul>
-								<li>
-									<a href="https://arxiv.org/abs/2408.10789">
-										Self-supervised Learning of Hybrid Part-aware 3D Representations of 2D Gaussians and Superquadrics
-									</a><br />
-									<b>Zhirui Gao</b>, Renjiao Yi, Yuhang Huang, Wei Chen, Chenyang Zhu, Kai Xu<br />
-									<p style="margin-top:3px">
-										[<a href="https://arxiv.org/abs/2408.10789">arXiv</a>]
-										[<a href="https://zhirui-gao.github.io/PartGS/">Project Page</a>]
-										[<a href="https://github.com/zhirui-gao/PartGS">Code</a>]
-									</p>
-								</li>
-								We introduce PartGS, a self-supervised part-aware reconstruction framework that integrates
-								2D Gaussians and superquadrics to parse objects and scenes into an interpretable decomposition,
-								leveraging multi-view image inputs to uncover 3D structural information.
-							</ul>
-						</td>
-					</tr>
+                    <!-- BoxFusion - PG 2025 -->
+                    <tr class="pub-row pub-highlight">
+                        <td style="padding:0.5%; width:25%; vertical-align:middle">
+                            <span class="badge-base badge-normal">PG 2025</span>
+                            <img src="teasers/boxfusion.png" style="width:100%; max-width:220px;" alt="BoxFusion" />
+                        </td>
+                        <td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
+                            <ul>
+                                <li>
+                                    <a href="https://arxiv.org/abs/2506.15610">
+                                        BoxFusion: Reconstruction-Free Open-Vocabulary 3D Object Detection via Real-Time Multi-View Box Fusion
+                                    </a><br />
+                                    Yuqing Lan, Chenyang Zhu, <b>Zhirui Gao</b>, Jiazhao Zhang, Yihan Cao, Renjiao Yi, Yijie Wang, Kai Xu<br />
+                                    <p style="margin-top:3px">
+                                        [<a href="https://arxiv.org/abs/2506.15610">arXiv</a>]
+                                        [<a href="https://lanlan96.github.io/BoxFusion/">Project Page</a>]
+                                        [<a href="https://github.com/lanlan96/BoxFusion">Code</a>]
+                                    </p>
+                                </li>
+                                We propose a novel reconstruction-free paradigm for online open-vocabulary 3D object detection,
+                                which models structural object layouts with desirable running and memory efficiency.
+                            </ul>
+                        </td>
+                    </tr>
 
-					<!-- PoseProbe - IEEE TCSVT 2025 -->
-					<tr class="pub-row">
-						<td style="padding:0.5%; width:25%; vertical-align:middle">
-							<span class="badge-base badge-normal">IEEE TCSVT 2025</span>
-							<img src="teasers/poseprobe.png" style="width:100%; max-width:220px;" alt="PoseProbe" />
-						</td>
-						<td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
-							<ul>
-								<li>
-									<a href="https://arxiv.org/pdf/2408.16690">
-										Generic Objects as Pose Probes for Few-shot View Synthesis
-									</a><br />
-									<b>Zhirui Gao</b>, Renjiao Yi, Chenyang Zhu, Ke Zhuang, Wei Chen, Kai Xu<br />
-									<p style="margin-top:3px">
-										[<a href="https://arxiv.org/pdf/2408.16690">arXiv</a>]
-										[<a href="https://zhirui-gao.github.io/PoseProbe.github.io/">Project Page</a>]
-										[<a href="https://github.com/zhirui-gao/PoseProbe">Code</a>]
-									</p>
-								</li>
-								We propose to utilize everyday objects, commonly found in both images and real life,
-								as "pose probes" to tackle few-view (3~6 unposed images) NeRF reconstruction.
-							</ul>
-						</td>
-					</tr>
+                    <!-- CurveGaussian - ICCV 2025 -->
+                    <tr class="pub-row">
+                        <td style="padding:0.5%; width:25%; vertical-align:middle">
+                            <span class="badge-base badge-ccfa">🏆 ICCV 2025 · CCF-A</span>
+                            <img src="teasers/curvegs.png" style="width:100%; max-width:220px;" alt="CurveGaussian" />
+                        </td>
+                        <td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
+                            <ul>
+                                <li>
+                                    <a href="https://arxiv.org/abs/2506.21401">
+                                        Curve-Aware Gaussian Splatting for 3D Parametric Curve Reconstruction
+                                    </a><br />
+                                    <b>Zhirui Gao</b>, Renjiao Yi, Yaqiao Dai, Xuening Zhu, Wei Chen, Chenyang Zhu, Kai Xu<br />
+                                    <p style="margin-top:3px">
+                                        [<a href="https://arxiv.org/abs/2506.21401">arXiv</a>]
+                                        [<a href="https://zhirui-gao.github.io/CurveGaussian/">Project Page</a>]
+                                        [<a href="https://github.com/zhirui-gao/Curve-Gaussian">Code</a>]
+                                    </p>
+                                </li>
+                                We present an end-to-end method for reconstructing 3D parametric curves directly from multi-view edge maps.
+                                Contrasting with the existing reconstruct-and-fit pipelines, our one-stage approach optimizes 3D parametric curves directly from 2D edge maps.
+                            </ul>
+                        </td>
+                    </tr>
 
-					<!-- 2D3D-MATR - ICCV 2023 -->
-					<tr class="pub-row pub-highlight">
-						<td style="width:25%; vertical-align:middle; padding:0.5%;">
-							<span class="badge-base badge-ccfa">🏆 ICCV 2023 · CCF-A</span>
-							<img src="teasers/li_iccv23.png" style="width:100%; max-width:220px;" alt="2D3D-MATR" />
-						</td>
-						<td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
-							<ul>
-								<li>
-									<a href="https://arxiv.org/pdf/2308.05667">
-										2D3D-MATR: 2D-3D Matching Transformer for Detection-free Registration between Images and Point Clouds
-									</a><br />
-									Minhao Li, Zheng Qin, <b>Zhirui Gao</b>, Renjiao Yi, Chenyang Zhu, Yulan Guo, Kai Xu<br />
-									<p style="margin-top:3px">
-										[<a href="https://arxiv.org/pdf/2308.05667">arXiv</a>]
-										[<a href="https://github.com/minhaolee/2D3DMATR">Project Page</a>]
-										[<a href="https://github.com/minhaolee/2D3DMATR">Code</a>]
-									</p>
-								</li>
-								The commonly adopted detect-then-match approach to registration finds difficulties in the cross-modality cases due to the
-								incompatible keypoint detection and inconsistent feature description. We propose, 2D3D-MATR, a detection-free method for
-								accurate and robust registration between images and point clouds.
-							</ul>
-						</td>
-					</tr>
+                    <!-- PartGS - ICCV 2025 -->
+                    <tr class="pub-row pub-highlight">
+                        <td style="width:25%; vertical-align:middle; padding:0.5%;">
+                            <span class="badge-base badge-ccfa">🏆 ICCV 2025 · CCF-A</span>
+                            <img src="teasers/partgs.png" style="width:100%; max-width:220px;" alt="PartGS" />
+                        </td>
+                        <td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
+                            <ul>
+                                <li>
+                                    <a href="https://arxiv.org/abs/2408.10789">
+                                        Self-supervised Learning of Hybrid Part-aware 3D Representations of 2D Gaussians and Superquadrics
+                                    </a><br />
+                                    <b>Zhirui Gao</b>, Renjiao Yi, Yuhang Huang, Wei Chen, Chenyang Zhu, Kai Xu<br />
+                                    <p style="margin-top:3px">
+                                        [<a href="https://arxiv.org/abs/2408.10789">arXiv</a>]
+                                        [<a href="https://zhirui-gao.github.io/PartGS/">Project Page</a>]
+                                        [<a href="https://github.com/zhirui-gao/PartGS">Code</a>]
+                                    </p>
+                                </li>
+                                We introduce PartGS, a self-supervised part-aware reconstruction framework that integrates
+                                2D Gaussians and superquadrics to parse objects and scenes into an interpretable decomposition,
+                                leveraging multi-view image inputs to uncover 3D structural information.
+                            </ul>
+                        </td>
+                    </tr>
 
-					<!-- NEF - CVPR 2023 -->
-					<tr class="pub-row">
-						<td style="padding:0.5%; width:25%; vertical-align:middle">
-							<span class="badge-base badge-ccfa">🏆 CVPR 2023 · CCF-A</span>
-							<img src="teasers/ye_cvpr23.png" style="width:100%; max-width:220px;" alt="NEF" />
-						</td>
-						<td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
-							<ul>
-								<li>
-									<a href="https://arxiv.org/abs/2303.07653">
-										NEF: Neural Edge Fields for 3D Parametric Curve Reconstruction from Multi-view Images
-									</a><br />
-									Yunfan Ye, Renjiao Yi, <b>Zhirui Gao</b>, Chenyang Zhu, Zhiping Cai, Kai Xu<br />
-									<p style="margin-top:3px">
-										[<a href="https://arxiv.org/abs/2303.07653">arXiv</a>]
-										[<a href="https://yunfan1202.github.io/NEF/">Project Page</a>]
-										[<a href="https://github.com/yunfan1202/NEF_code">Code</a>]
-									</p>
-								</li>
-								We study the problem of reconstructing 3D feature curves of an object from a set of calibrated multi-view images.
-								To do so, we learn a neural implicit field representing the density distribution of 3D edges which we refer to as Neural Edge Field (NEF).
-								Inspired by NeRF, NEF is optimized with a view-based rendering loss
-								where a 2D edge map is rendered at a given view and is compared to the ground-truth edge map extracted from the image of that view.
-							</ul>
-						</td>
-					</tr>
+                    <!-- PoseProbe - IEEE TCSVT 2025 -->
+                    <tr class="pub-row">
+                        <td style="padding:0.5%; width:25%; vertical-align:middle">
+                            <span class="badge-base badge-normal">IEEE TCSVT 2025</span>
+                            <img src="teasers/poseprobe.png" style="width:100%; max-width:220px;" alt="PoseProbe" />
+                        </td>
+                        <td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
+                            <ul>
+                                <li>
+                                    <a href="https://arxiv.org/pdf/2408.16690">
+                                        Generic Objects as Pose Probes for Few-shot View Synthesis
+                                    </a><br />
+                                    <b>Zhirui Gao</b>, Renjiao Yi, Chenyang Zhu, Ke Zhuang, Wei Chen, Kai Xu<br />
+                                    <p style="margin-top:3px">
+                                        [<a href="https://arxiv.org/pdf/2408.16690">arXiv</a>]
+                                        [<a href="https://zhirui-gao.github.io/PoseProbe.github.io/">Project Page</a>]
+                                        [<a href="https://github.com/zhirui-gao/PoseProbe">Code</a>]
+                                    </p>
+                                </li>
+                                We propose to utilize everyday objects, commonly found in both images and real life,
+                                as "pose probes" to tackle few-view (3~6 unposed images) NeRF reconstruction.
+                            </ul>
+                        </td>
+                    </tr>
 
-					<!-- Deep Template Matching - CVMJ 2024 -->
-					<tr class="pub-row pub-highlight">
-						<td style="width:25%; vertical-align:middle; padding:0.5%;">
-							<span class="badge-base badge-normal">CVMJ 2024</span>
-							<img src="teasers/gao_cvm24.png" style="width:100%; max-width:220px;" alt="Deep Template Matching" />
-						</td>
-						<td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
-							<ul>
-								<li>
-									<a href="https://arxiv.org/pdf/2303.08438">
-										Learning Accurate Template Matching with Differentiable Coarse-to-Fine Correspondence Refinement
-									</a><br />
-									<b>Zhirui Gao</b>, Renjiao Yi, Zheng Qin, Yunfan Ye, Chenyang Zhu, Kai Xu<br />
-									<p style="margin-top:3px">
-										[<a href="https://arxiv.org/pdf/2303.08438">arXiv</a>]
-										[<a href="https://github.com/zhirui-gao/Deep-Template-Matching">Project Page</a>]
-										[<a href="https://github.com/zhirui-gao/Deep-Template-Matching">Code</a>]
-									</p>
-								</li>
-								Template matching is a fundamental task in computer vision and has been studied for decades.
-								We propose an accurate template matching method based on differentiable coarse-to-fine correspondence refinement.
-								We use an edge-aware module to overcome the domain gap between the mask template and the grayscale image, allowing robust matching.
-							</ul>
-						</td>
-					</tr>
+                    <!-- 2D3D-MATR - ICCV 2023 -->
+                    <tr class="pub-row pub-highlight">
+                        <td style="width:25%; vertical-align:middle; padding:0.5%;">
+                            <span class="badge-base badge-ccfa">🏆 ICCV 2023 · CCF-A</span>
+                            <img src="teasers/li_iccv23.png" style="width:100%; max-width:220px;" alt="2D3D-MATR" />
+                        </td>
+                        <td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
+                            <ul>
+                                <li>
+                                    <a href="https://arxiv.org/pdf/2308.05667">
+                                        2D3D-MATR: 2D-3D Matching Transformer for Detection-free Registration between Images and Point Clouds
+                                    </a><br />
+                                    Minhao Li, Zheng Qin, <b>Zhirui Gao</b>, Renjiao Yi, Chenyang Zhu, Yulan Guo, Kai Xu<br />
+                                    <p style="margin-top:3px">
+                                        [<a href="https://arxiv.org/pdf/2308.05667">arXiv</a>]
+                                        [<a href="https://github.com/minhaolee/2D3DMATR">Project Page</a>]
+                                        [<a href="https://github.com/minhaolee/2D3DMATR">Code</a>]
+                                    </p>
+                                </li>
+                                The commonly adopted detect-then-match approach to registration finds difficulties in the cross-modality cases due to the
+                                incompatible keypoint detection and inconsistent feature description. We propose, 2D3D-MATR, a detection-free method for
+                                accurate and robust registration between images and point clouds.
+                            </ul>
+                        </td>
+                    </tr>
 
-					<!-- Delving into Crispness - IEEE TIP 2023 -->
-					<tr class="pub-row">
-						<td style="padding:0.5%; width:25%; vertical-align:middle">
-							<span class="badge-base badge-ccfa">🏆 IEEE TIP 2023 · CCF-A</span>
-							<img src="teasers/ye_tip23.png" style="width:100%; max-width:220px;" alt="Delving into Crispness" />
-						</td>
-						<td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
-							<ul>
-								<li>
-									<a href="https://arxiv.org/pdf/2306.15172">
-										Delving into Crispness: Guided Label Refinement for Crisp Edge Detection
-									</a><br />
-									Yunfan Ye, Renjiao Yi, <b>Zhirui Gao</b>, Zhiping Cai, Kai Xu<br />
-									<p style="margin-top:3px">
-										[<a href="https://arxiv.org/pdf/2306.15172">arXiv</a>]
-										[<a href="https://github.com/yunfan1202/Delving-into-Crispness">Project Page</a>]
-										[<a href="https://github.com/yunfan1202/Delving-into-Crispness">Code</a>]
-									</p>
-								</li>
-								We find that label quality is more important than model design to achieving crisp edge detection.
-								We propose an iterative Canny-guided refinement of human-labeled edges whose result can be used to train crisp edge detectors.
-							</ul>
-						</td>
-					</tr>
-
-				</tbody>
-			</table>
-		</div><br />
-
-		<div id="education">
-			<h2>🎓 Education</h2>
-			<ul>
-				<li class="edu-item">
-					<span class="edu-date">2021 – 2026</span>
-					<b>Ph.D.</b>, College of Computer Science,
-					<b>National University of Defense Technology</b>
-				</li>
-				<li class="edu-item">
-					<span class="edu-date">2021 – 2022</span>
-					<b>Master</b>, College of Computer Science,
-					<b>National University of Defense Technology</b>
-				</li>
-				<li class="edu-item">
-					<span class="edu-date">2017 – 2021</span>
-					<b>B.Eng.</b>, College of Computer Science,
-					<b>China University of Geosciences</b>
-					<ul style="margin-top:4px;">
-						<li style="font-size:0.9rem;">GPA: 4.08/5.00; Average Score: 91.5/100</li>
-						<li style="font-size:0.9rem;">Comprehensive Ranking: <b>1/151</b></li>
-					</ul>
-				</li>
-			</ul>
-		</div><br />
-
-		<div id="award">
-			<h2>🏆 Honors &amp; Awards</h2>
-			<ul>
-				<li class="edu-item">
-					<span class="award-date">2025</span>
-					National Scholarship
-				</li>
-				<li class="edu-item">
-					<span class="award-date">2023</span>
-					First Prize Freshman Scholarship
-				</li>
-				<li class="edu-item">
-					<span class="award-date">2021</span>
-					Outstanding Graduate of China University of Geosciences, Top 5%
-				</li>
-				<li class="edu-item">
-					<span class="award-date">2021</span>
-					Outstanding Degree Thesis of China University of Geosciences, Top 5%
-				</li>
-				<li class="edu-item">
-					<span class="award-date">2019, 2020</span>
-					National Encouragement Scholarship, Top 5%
-				</li>
-				<li class="edu-item">
-					<span class="award-date">2019</span>
-					<b>Silver Medal of ACM-ICPC</b>
-				</li>
-				<li class="edu-item">
-					<span class="award-date">2018</span>
-					<b>National Scholarship</b>, Ministry of Education (the highest honor scholarship in China)
-				</li>
-			</ul>
-		</div><br />
-
-		<div id="service">
-			<h2>📝 Services</h2>
-			<ul>
-				<li>
-					Conference Reviewer: ICCV, MM, AAAI
-				</li>
-				<li>
-					Journal Reviewer: TCSVT
-				</li>
-			</ul>
-		</div><br />
-
-		<div id="footer">
-			<div id="footer-text"></div>
-		</div>
-
-		<p style="text-align:center">
-			© Zhirui Gao
-			<script type="text/javascript" language="javascript">
-				if (Date.parse(document.lastModified) != 0) {
-					document.write(" | Last updated: " + document.lastModified.substr(0, 10));
-				}
-			</script>
-		</p>
-
-	</div>
-
-</body>
-
-</html>
+                    <!-- NEF - CVPR 2023 -->
+                    <tr class="pub-row">
+                        <td style="padding:0.5%; width:25%; vertical-align:middle">
+                            <span class="badge-base badge-ccfa">🏆 CVPR 2023 · CCF-A</span>
+                            <img src="teasers/ye_cvpr23.png" style="width:100%; max-width:220px;" alt="NEF" />
+                        </td>
+                        <td style="padding:0.5%; padding-left:8px; width:75%; vertical-align:top">
+                            <ul>
+                                <li>
+                                    <a href="https://arxiv.org/abs/2303.07653">
+                                        NEF: Neural Edge Fields for 3D Parametric Curve Reconstruction from Multi-view Images
+                                    </a><br />
+                                    Yunfan Ye, Renjiao Yi, <b>Zhirui Gao</b>, Chenyang Zhu, Zhiping Cai, Kai Xu<br />
+                                    <p style="margin-top:3px">
+                                        [<a href="https://arxiv.org/abs/2303.07653">arXiv</a>]
+                                        [<a href="https://yunfan1202.github.io/NEF/">Project Page</a>]
+                                        [<a href="https://github.com/yunfan1202/NEF_code">Code</a>]
+                                    </p>
+                                </li>
+                                We study the problem of reconstructing 3D feature curves of an object from a set of calibrated multi-view images.
+                                To do so, we learn a neural implicit field representing the density distribution of
